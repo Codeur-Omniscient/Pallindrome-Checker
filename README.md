@@ -11,7 +11,7 @@ This is a Free Code Camp survey project for practicing JavaScript in the **Javas
 git clone https://github.com/Codeur-Omniscient/Pallindrome-Checker.git
 
 #Change directory
-cd Personal-Portfolio-Website
+cd Pallindrome-Checker
 ```
 
 ## Stack
