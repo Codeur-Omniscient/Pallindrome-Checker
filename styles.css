@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+#text-input {
+  padding: 15px;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+#text-input:focus {
+  outline: none;
+  border-color: #6c63ff;
+}
+
+#check-btn {
+  padding: 15px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#check-btn:hover {
+  background-color: #5a52d5;
+  transform: translateY(-2px);
+}
+
+#check-btn:active {
+  transform: translateY(0);
+}
+
+.result-container {
+  min-height: 60px;
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.result-container.palindrome {
+  background-color: rgba(46, 213, 115, 0.15);
+  color: #2ed573;
+  border: 2px solid rgba(46, 213, 115, 0.3);
+}
+
+.result-container.not-palindrome {
+  background-color: rgba(255, 71, 87, 0.15);
+  color: #ff4757;
+  border: 2px solid rgba(255, 71, 87, 0.3);
+}
+
+.examples {
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.examples h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.examples ul {
+  list-style-position: inside;
+  color: #666;
+}
+
+.examples li {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+footer {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+footer a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .input-container {
+    flex-direction: row;
+  }
+
+  #text-input {
+    flex: 1;
+  }
+
+  #check-btn {
+    width: 120px;
+  }
+}
